@@ -535,7 +535,9 @@ height: 300px;
     border: 1px solid #e7e9fc;
     background-color: #ffffff;
 }
-
+:root {
+    --overlay-text-color: #f4f4fd;
+}
 .portfolio img {
     width: 100%;
     height: 300px;
@@ -576,9 +578,11 @@ height: 300px;
     padding: 100px 0
 }
 
-.container-icons:last-child {
+.container-icons {
     display: flex;
     flex-direction: column;
+    align-items: baseline;
+    margin-right: 120px
 }
 
 .social-icon {
