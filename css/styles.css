@@ -330,10 +330,10 @@ a {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 24px;
     list-style: none;
     padding: 0;
     margin: 0;
+    gap: 24px
 }
 
 .social-item {
@@ -351,6 +351,7 @@ a {
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
+
 }
 
 .social-link:hover,
@@ -382,7 +383,11 @@ a {
 .portfolio {
     padding: 120px 0;
 }
-
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .portfolio-title {
     font-size: 36px;
     line-height: 1.11;
@@ -392,7 +397,12 @@ a {
     color: #2e2f42;
     margin-bottom: 72px;
 }
-
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
 .portfolio ul {
     list-style: none;
     padding: 0;
@@ -421,6 +431,9 @@ a {
 .portfolio-item {
     list-style: none;
     cursor: pointer;
+    width: calc((100% - 48px) / 3);
+    cursor: pointer;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
@@ -430,10 +443,16 @@ a {
 }
 
 .portfolio-image-container {
-    position: relative;
-    overflow: hidden;
-    width: 360px;
-    height: 300px;
+position: relative;
+overflow: hidden;
+width: 100%;
+height: 300px;
+}
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .portfolio-image {
@@ -485,20 +504,36 @@ a {
     transform: translateY(0%);
 }
 
+
 .overlay-text {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-    margin: 0;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ font-size: 16px;
+ line-height: 1.5;
+ letter-spacing: 0.02em;
+ color: var(--overlay-text-color);
+ padding: 40px 32px;
+ background-color: #4d5ae5;
+ transform: translateY(100%);
+ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ display: flex;
+ align-items: center;
+ margin: 0;
+    }
+.portfolio-item:hover .overlay-text {
+    transform: translateY(0%);
 }
 
 .portfolio-info {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    background-color: #ffffff;
 }
 
 .portfolio img {
