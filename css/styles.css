@@ -572,7 +572,7 @@ height: 300px;
 }
 
 .page-footer .paragraf {
-    color: #f4f4fd;
+    color: var(--white-text-color);
     max-width: 264px;
 }
 
