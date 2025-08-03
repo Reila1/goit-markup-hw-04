@@ -555,13 +555,25 @@ height: 300px;
 .social-media-container {
     margin-right: 120px;
 }
+:root {
+    --white-text-color: #FFFFFF;
+}
+
+.footer-content {
+    max-width: 264px;
+    margin-right: 120px;
+}
+
+.social-media-container {
+    margin-right: 120px;
+}
+
 .footer-logo {
-    letter-spacing: 0.02em;
-    line-height: 1.5;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     display: inline-block;
     margin-bottom: 16px;
 }
-
 
 .feature-item-title {
     font-weight: 500;
@@ -571,25 +583,26 @@ height: 300px;
     color: #2e2f42;
 }
 
-.page-footer .paragraf {
+.paragraf-footer {
     color: var(--white-text-color);
+    /* ← ВИПРАВЛЕНО! */
+    margin-bottom: 16px;
     max-width: 264px;
 }
 
-.footer-logo {
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-}
 .logo-wrapper {
     margin-right: 120px;
 }
+
 .page-footer {
-    padding: 100px 0
+    padding: 100px 0;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     align-items: baseline;
 }
+
 .container-icons {
     display: flex;
     align-items: baseline;
@@ -603,13 +616,7 @@ height: 300px;
     margin: 0;
     padding: 0;
 }
-.paragraf-footer {
-    color: var(--white-text-color);
-    margin-bottom: 16px;
-}
-:root {
-    --white-text-color: #FFFFFF;
-}
+
 .social-icon-title {
     font-weight: 500;
     font-size: 16px;
@@ -618,6 +625,7 @@ height: 300px;
     color: #f4f4fd;
     margin-bottom: 16px;
 }
+
 .social {
     width: 100%;
     height: 100%;
