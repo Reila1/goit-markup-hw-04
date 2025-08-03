@@ -604,7 +604,7 @@ height: 300px;
     padding: 0;
 }
 .paragraf-footer {
-    color: #FFFFFF;
+    color: var(--white-text-color);
     margin-bottom: 16px;
 }
 :root {
