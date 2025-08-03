@@ -607,7 +607,7 @@ height: 300px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: #FFFFFF;
+    color: var(--white-text-color);
     letter-spacing: 0.02em;
     max-width: 264px;
     gap: 16px;
