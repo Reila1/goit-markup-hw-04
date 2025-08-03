@@ -604,7 +604,7 @@ height: 300px;
     padding: 0;
 }
 .paragraf-footer {
-    color: var(--white-text-color);
+    color: #FFFFFF;
     margin-bottom: 16px;
 }
 :root {
@@ -616,7 +616,7 @@ height: 300px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 .social {
     width: 100%;
