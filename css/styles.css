@@ -571,14 +571,17 @@ height: 300px;
     color: #2e2f42;
 }
 
-.page-footer .paragraf {
-    color: #f4f4fd;
-    max-width: 264px;
+.paragraf-footer {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--white-text-color);
 }
 
 .footer-logo {
     line-height: 1.17;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
 }
 .logo-wrapper {
     margin-right: 120px;
@@ -603,6 +606,9 @@ height: 300px;
     margin: 0;
     padding: 0;
 }
+:root {
+    --white-text-color: #FFFFFF;
+}
 .paragraf-footer {
     font-weight: 400;
     font-size: 16px;
@@ -611,9 +617,6 @@ height: 300px;
     letter-spacing: 0.02em;
     max-width: 264px;
 }
-:root {
-    --white-text-color: #FFFFFF;
-}
 .social-icon-title {
     font-weight: 500;
     font-size: 16px;
@@ -621,6 +624,13 @@ height: 300px;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     margin-bottom: 16px;
+}
+.social-links-footer {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .social {
     width: 100%;
