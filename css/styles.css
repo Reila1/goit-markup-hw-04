@@ -336,7 +336,7 @@ background-color: #2E2F42;
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 24px;
+    gap: 16px;
 }
 
 .social-item {
@@ -610,7 +610,6 @@ height: 300px;
     color: var(--white-text-color);
     letter-spacing: 0.02em;
     max-width: 264px;
-    gap: 16px;
 }
 :root {
     --white-text-color: #FFFFFF;
